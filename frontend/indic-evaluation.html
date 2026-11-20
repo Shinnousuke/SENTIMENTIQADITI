@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Multilingual Intelligence | SentimentIQ</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="indic-evaluation.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <main class="indic-dashboard">
+
+        <header class="indic-header">
+            <div>
+                <p class="indic-eyebrow">SENTIMENTIQ / RESEARCH & ANALYTICS</p>
+                <h1>Multilingual Intelligence</h1>
+                <p>
+                    Evaluating sentiment classification across Indian languages
+                    using the IndicSentiment benchmark.
+                </p>
+            </div>
+
+            <a href="index.html" class="indic-back">
+                ← Back to Dashboard
+            </a>
+        </header>
+
+        <section class="indic-overview">
+            <div class="indic-card">
+                <span>Evaluation Dataset</span>
+                <h2>IndicSentiment</h2>
+            </div>
+
+            <div class="indic-card">
+                <span>Languages</span>
+                <h2 id="language-count">--</h2>
+            </div>
+
+            <div class="indic-card">
+                <span>Total Predictions</span>
+                <h2 id="prediction-count">--</h2>
+            </div>
+
+            <div class="indic-card">
+                <span>Incorrect Predictions</span>
+                <h2 id="error-count">--</h2>
+            </div>
+        </section>
+
+        <section class="indic-section">
+            <h2>Overall Evaluation Metrics</h2>
+            <div id="metric-cards" class="indic-metrics">
+                <p>Loading evaluation metrics...</p>
+            </div>
+        </section>
+
+        <section class="indic-section">
+            <h2>Language-wise Performance</h2>
+            <div class="indic-panel">
+                <canvas id="language-chart"></canvas>
+            </div>
+            <div class="indic-table-wrap">
+                <table id="language-table">
+                    <thead></thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="indic-section">
+            <h2>Evaluation Visualisations</h2>
+            <div id="chart-gallery" class="indic-gallery">
+                <p>Loading charts...</p>
+            </div>
+        </section>
+
+        <section class="indic-section">
+            <h2>Incorrect Predictions Analysis</h2>
+            <p class="indic-description">
+                Reviews where the predicted sentiment differs from the
+                dataset's original sentiment label.
+            </p>
+
+            <div class="indic-table-wrap">
+                <table id="error-table">
+                    <thead></thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="indic-section">
+            <h2>Prediction Records</h2>
+
+            <div class="indic-table-wrap">
+                <table id="prediction-table">
+                    <thead></thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+
+            <button id="load-more" class="indic-button">
+                Load More Predictions
+            </button>
+        </section>
+
+        <footer class="indic-footer">
+            SentimentIQ · Multilingual Evaluation Module
+        </footer>
+
+    </main>
+
+    <script src="indic-evaluation.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "model": "cardiffnlp/twitter-xlm-roberta-base-sentiment",
+  "total_reviews": 9980,
+  "incorrect_predictions": 5185,
+  "accuracy": 0.4805,
+  "macro_precision": 0.5806,
+  "macro_recall": 0.3204,
+  "macro_f1": 0.4127
+}
